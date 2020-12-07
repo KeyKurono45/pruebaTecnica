@@ -1,0 +1,32 @@
+
+<div class="text-center border border-light p-5 container">
+<form (ngSubmit)="edit()" ngNativeValidate>
+    <div class="form-group">
+      <label for="name">Nombre</label>
+      <input  name="name" [(ngModel)]="user.name" type="text" required class="form-control" id="name"
+        placeholder="Nombre">
+    </div>
+    <div class="form-group">
+        <label for="lastName">Apellido</label>
+        <input [(ngModel)]="user.lastName" name="lastName" type="text" required class="form-control" id="lastName"
+          placeholder="Apellido">
+      </div>
+      <div class="form-group">
+        <label for="age">Edad</label>
+        <input  name="age" [(ngModel)]="user.age" type="number" required class="form-control" id="age"   
+          placeholder="age">
+      </div>
+
+      <div class="row">
+        <div class="col-md-6 col-xs-6">
+            <button type="submit" class="btn btn-info">Editar</button>
+        </div>
+        <div class="col-md-6 col-xs-6">
+            <button  class="btn btn-danger" (click)="cancel()">Cancelar</button>
+        </div>
+      </div>
+
+ 
+   
+  </form>
+</div>

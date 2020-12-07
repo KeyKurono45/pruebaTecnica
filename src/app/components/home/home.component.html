@@ -1,0 +1,24 @@
+<div class="container-fluid text-center" style="margin-top: 5%;">
+  <button type="button" class="btn btn-info text-left" style="display: block;" (click)="logOut()">Log Out</button>
+  <div class="jumbotron text-center" style="margin-bottom:0">
+    <h1>Bienvenido</h1>
+    <h2> {{ (getState | async)?.user?.name}} {{ (getState | async)?.user?.lastName}}</h2>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4">
+        <h2>Mi edad</h2>
+        <p>{{ (getState | async)?.user?.age}} años</p>
+        <hr class="hidden-sm hidden-md hidden-lg">
+      </div>
+
+      <div class="col-sm-8">
+        <h2>Email</h2>
+        <p>{{ (getState | async)?.user?.email}}</p>
+        <hr class="hidden-sm hidden-md hidden-lg">
+      </div>
+    </div>
+  </div>
+  <br>
+  <button type="button" class="btn btn-info text-left" style="display: block;" (click)="edit()">Editar</button>
