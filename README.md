@@ -3,7 +3,7 @@ This is a sample of redux with a login
 
 
 ## Install
-git clone .....
+git clone https://github.com/KeyKurono45/pruebaTecnica.git
 npm install
 ng serve
 
