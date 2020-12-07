@@ -9,7 +9,7 @@ ng serve
 
 
 ## Install fake back
-git clone ...
+git clone https://github.com/KeyKurono45/serve-wjt.git
 npm install
 npm run started
 
